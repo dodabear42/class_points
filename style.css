@@ -2,3 +2,19 @@ h1 {
 	font-size: 48px !important;
 	font-family: "Permanent Marker", Arial, sans-serif !important;
 }
+header, .middle-wrapper, footer, #title-wrapper {
+	margin: auto;
+}
+header, .middle-wrapper, footer {
+	max-width: 900px;
+	width: 100%;
+}
+.middle-wrapper {
+	background: #fff url("landing-background.jpg") no-repeat;
+	height: auto;
+	opacity: 0.5;
+}
+#title-wrapper {
+	padding-top: 100px;
+	text-align: center;
+}
