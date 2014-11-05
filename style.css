@@ -1,20 +1,139 @@
+* {
+	box-sizing: border-box;
+	/*border: 1px solid red !important;*/
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	color: #369;
+}
+a, caption, input, h2, h3, h4, h5, h6, p {
+	font-family: "Nunito", Arial, sans-serif !important;
+	color: #000;
+}
+body {
+	background: #fff url("landing-background.jpg") no-repeat;
+	background-size: 100% 100%;
+	height: 100%;
+}
+footer {
+	height: 50px;
+	text-align: center;
+}
 h1 {
 	font-size: 48px !important;
 	font-family: "Permanent Marker", Arial, sans-serif !important;
 }
-header, .middle-wrapper, footer, #title-wrapper {
-	margin: auto;
+h6 {
+	font-size: 10px !important;
 }
-header, .middle-wrapper, footer {
+header, footer, .middle-wrapper, .title-wrapper {
+	margin: 0 auto;
+}
+header, footer, .middle-wrapper {
 	max-width: 900px;
+}
+header, footer, .middle-wrapper, .login-box {
 	width: 100%;
 }
-.middle-wrapper {
-	background: #fff url("landing-background.jpg") no-repeat;
-	height: auto;
-	opacity: 0.5;
+input {
+	border: 1px solid #c0c0c0;
+	margin: 5px auto 10px auto;
 }
-#title-wrapper {
-	padding-top: 100px;
+footer li {
+	padding: 20px;
+}
+.login-box, .register-box, input, #classroom-wrapper, #add-student {
+	border-radius: 10px;
+}
+.add-point, .subtract-point, .name, #add-student {
+	background-color: #369;
+	font-size: 36px;
 	text-align: center;
+}
+#add-student, #student {
+	display: inline-block;
+	margin: 10px 10px 10px 0;
+}
+#add-student {
+	width: 204px;
+	height: 130px;
+	padding-top: 40px;
+}
+.student {
+	width: 210px;
+}
+.add-point, .subtract-point {
+	width: 100px;
+	height: 50px;
+	display: inline-block;
+}
+.name {
+	width: 204px;
+	height: 80px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	margin-top: 2px;
+}
+.middle-wrapper {
+	padding: 100px 0;
+}
+.title-wrapper, #teacher-login, #parent-login, #teacher-register, #parent-register {
+	text-align: center;
+}
+.login-box, .register-box, #classroom-wrapper {
+	max-width: 400px;
+	height: auto;
+	background: #fff;
+	opacity: 0.9;
+	margin: 50px auto;
+	padding: 30px;
+}
+#login-content-wrapper, .register-box, #classroom-wrapper {
+	margin: auto;
+	width: 95%;
+	height: auto;
+}
+#login-button-wrapper, #register-button-wrapper {
+	width: 100%;
+	margin: 0 auto 10px 0;
+}
+li, #teacher-login, #parent-login, #teacher-register, #parent-register {
+	display: inline-block;
+}
+input, #teacher-login, #parent-login, #teacher-register, #parent-register {
+	height: 30px;
+}
+#teacher-login, #parent-login, #teacher-register, #parent-register {
+	width: 150px;
+	padding-top: 5px;
+}
+#teacher-login, #teacher-register, .add-point:hover, .subtract-point:hover, .name:hover, #add-student:hover {
+	background-color: #24476b;
+}
+#parent-login, #parent-register {
+	background-color: #369;
+}
+#parent-login-wrapper, #parent-register-wrapper {
+	display: none;
+}
+#teacher-login:hover, #teacher-register:hover, #parent-login:hover, #parent-register:hover {
+	background-color: #24476b;
+}
+#teacher-login, #teacher-register, .add-point {
+	border-top-left-radius: 10px;
+}
+#parent-login, #parent-register, .subtract-point {
+	border-top-right-radius: 10px;
+}
+#username, input[type=text], input[type=email] {
+	width: 300px;
+}
+#submit {
+	float: right;
+	margin: 0 20px 20px 20px;
+}
+#submit:hover {
+	background-color: #c0c0c0;
 }

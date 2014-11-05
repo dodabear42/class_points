@@ -3,34 +3,52 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link rel="stylesheet" type="text/css" href="reset.css">
 		<link href='http://fonts.googleapis.com/css?family=Permanent+Marker|Nunito:400,300,700' rel='stylesheet' type='text/css'>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<meta charset="utf-8">
 	</head>
 	<body>
 		<header>
 		</header>
 		<div class="middle-wrapper">			
-			<div id="title-wrapper">
-				<h1>Class Points</h1>
+			<div class="title-wrapper">
+				<a href="index.html">
+					<h1>Class Points</h1>
+				</a>
 			</div>
 			<div class="login-box">
-				<div id="teacher-login">
-					<h3>Teacher Login</h3>
+				<div id="login-content-wrapper">
+					<div id="login-button-wrapper">
+						<div id="teacher-login">
+							<h3>Teacher Login</h3>
+						</div>
+						<div id="parent-login">
+						<h3>Parent Login</h3>
+						</div>
+					</div>
+					<div id="teacher-login-wrapper">
+						<form id="teacher-login-form">
+							<h5>Username or email address</h5>
+							<input id="username" type="text" name="username">
+							<h5>Password</h5>
+							<input type="password" name="pwd">
+							<input id="submit" type="submit" name="Submit">
+						</form>
+						<a href="forgot-login.html">Forget something?</a><br>
+						<a href="register.html">Register</a>
+					</div>
+					<div id="parent-login-wrapper">
+						<form id="parent-login-form">
+							<h5>Username or email address</h5>
+							<input id="username" type="text" name="username">
+							<h5>Password</h5>
+							<input type="password" name="pwd">
+							<input id="submit" type="submit" name="Submit">
+						</form>
+						<a href="forgot-login.html">Forget something?</a><br>
+						<a href="register.html">Register</a>
+					</div>
 				</div>
-				<div id="parent-login">
-					<h3>Parent Login</h3>
-				</div>
-				<form id="teacher-login-form">
-					<h6>Username or email address</h6>
-					<input type="text" name="username">
-					<h6>Password</h6>
-					<input type="password" name="pwd">
-					<input type="submit">
-				</form>
-				<a href="forgot-login.html">Forget something?</a>
-				<a href="register.html">Register</a>
 			</div>
-			<caption>
-				background image courtesy of www.freedigitalphotos.net
-			</caption>
 		</div>
 		<footer>
 			<ul>
@@ -44,7 +62,13 @@
 						Contact
 					</a>
 				</li>
+				<li>
+					<caption>
+						<h6>background image courtesy of www.freedigitalphotos.net</h6>
+					</caption>
+				</li>
 			</ul>
 		</footer>
+		<script src="script.js"></script>
 	</body>
 </html>
