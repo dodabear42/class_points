@@ -8,9 +8,13 @@ a {
 a:hover {
 	color: #369;
 }
-a, caption, input, h2, h3, h4, h5, h6, p {
+a, caption, input, h2, h4, h5, h6, p, select, label {
 	font-family: "Nunito", Arial, sans-serif !important;
 	color: #000;
+}
+h3 {
+	font-family: "Nunito", Arial, sans-serif !important;
+	color: white;
 }
 body {
 	background: #fff url("landing-background.jpg") no-repeat;
@@ -37,14 +41,15 @@ header, footer, .middle-wrapper {
 header, footer, .middle-wrapper, .login-box {
 	width: 100%;
 }
-input {
+input, select {
 	border: 1px solid #c0c0c0;
 	margin: 5px auto 10px auto;
+	width: 300px;
 }
 footer li {
 	padding: 20px;
 }
-.login-box, .register-box, input, #classroom-wrapper, #add-student {
+.login-box, .register-box, input, select, #classroom-wrapper, #add-student {
 	border-radius: 10px;
 }
 .add-point, .subtract-point, .name, #add-student {
@@ -82,8 +87,10 @@ footer li {
 .title-wrapper, #teacher-login, #parent-login, #teacher-register, #parent-register {
 	text-align: center;
 }
+.login-box, .register-box {
+	max-width: 380px;
+}
 .login-box, .register-box, #classroom-wrapper {
-	max-width: 400px;
 	height: auto;
 	background: #fff;
 	opacity: 0.9;
@@ -102,7 +109,7 @@ footer li {
 li, #teacher-login, #parent-login, #teacher-register, #parent-register {
 	display: inline-block;
 }
-input, #teacher-login, #parent-login, #teacher-register, #parent-register {
+input, select, #teacher-login, #parent-login, #teacher-register, #parent-register {
 	height: 30px;
 }
 #teacher-login, #parent-login, #teacher-register, #parent-register {
@@ -126,13 +133,6 @@ input, #teacher-login, #parent-login, #teacher-register, #parent-register {
 }
 #parent-login, #parent-register, .subtract-point {
 	border-top-right-radius: 10px;
-}
-#username, input[type=text], input[type=email] {
-	width: 300px;
-}
-#submit {
-	float: right;
-	margin: 0 20px 20px 20px;
 }
 #submit:hover {
 	background-color: #c0c0c0;

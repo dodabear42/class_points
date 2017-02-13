@@ -1,0 +1,76 @@
+body {
+  margin: 0px;
+  font-family: verdana;
+  font-size: 1.4em;
+}
+
+section li {
+  border-radius: 10px;
+}
+footer li {
+  border-radius: 10px 10px 0 0;
+}
+/*initialize flexbox container and flexbox items*/
+.fc > * {
+  margin: 10px;
+  padding: 20px;
+
+  flex: 1;
+  min-width: 30px;
+}
+.fc {
+  display: flex;
+  flex-flow: row wrap;
+  /*ensure flex-container is always at least as tall as the viewport.
+  Keeps footer from coming up*/
+  min-height: 10vh;
+}
+/* header and footer should be full width */
+.fc header, .fc footer {
+  flex: 0 1 100vw;
+}
+ul {
+  list-style: none;
+}
+nav li {
+  border-radius: 0 0 10px 10px;
+
+}
+nav ul li {
+  min-width: 150px;
+}
+
+.upper-left, .upper-right, .lower-left, .lower-right {
+  background-color: lightgray;
+  margin: 5px;
+  width: 75px;
+  height: 75px;
+    
+}
+.upper-left {
+  border-top-left-radius: 10px;
+}
+.upper-right {
+  border-top-right-radius: 10px;
+}
+.lower-left {
+  border-bottom-left-radius: 10px;
+}
+.lower-right {
+  border-bottom-right-radius: 10px;
+}
+.student {
+  max-width: 200px;
+}
+
+#addnewstudent, #about {
+  background-color: #ff9933;
+}
+
+#reports, #contact {
+  background-color: #99ff33;
+}
+
+#communication, #facebook {
+  background-color: #ccff33;
+ }
